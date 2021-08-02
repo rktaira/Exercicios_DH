@@ -3,6 +3,7 @@ fun main() {
     println(ex2("testando texto igual","testando texto igual"))
     println(ex3(3))
     println(ex4())
+    println(ex5(7, 2, 6, 5))
     println(ex6())
 
 }
