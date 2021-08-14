@@ -9,7 +9,8 @@ open class Conta(open val cliente: Cliente) {
     }
 
     open fun sacarDinheiro(qtd: Float) {
-        saldo -= qtd
+        if (qtd>saldo) {"saldo insuficiente"}
+        else{saldo -= qtd}
     }
 
     fun consultarSaldo() {

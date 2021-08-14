@@ -9,11 +9,9 @@ fun main() {
     caneta.mudarNome("Caneta BIC")
     caneta.mudarQtdMinima(10)
     caneta.repor(20)
-
     println(caneta.mostra())
 
     caneta.darBaixa(60)
-
     println(caneta.mostra())
 
     println(caneta.precisaRepor())
