@@ -30,10 +30,20 @@ fun main() {
     )
     var escolha = scanner.nextInt()
 
-    if (escolha==1) {
-        padrao.imprimeValor()
-    }; if (escolha==2){
-        vip.imprimeValor()
+//    if (escolha==1) {
+//        padrao.imprimeValor()
+//    }; if (escolha==2){
+//        vip.imprimeValor()
+//    } else {
+//        println ("Opção inválida, tente novamente")
+//        return main()
+//    }
+
+    when(escolha) {
+        1 -> padrao.imprimeValor()
+        2 -> vip.imprimeValor()
+        else ->  {println ("Opção inválida, tente novamente")
+        return main()}
     }
 
 }
