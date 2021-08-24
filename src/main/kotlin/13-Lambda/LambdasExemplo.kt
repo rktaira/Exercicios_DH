@@ -42,7 +42,7 @@ println()
     fun somatoria(a: Int, b: Int, calculador: (Int, Int) -> Int) {
         println(calculador(a, b))
     }
-    somatoria(20, 30, somaA)
+    somatoria(20, 30, somaC)
 
     val validaEmail: (String) -> Boolean = {email -> email.contains("@") && email.contains(".com")}
     println(validaEmail("asdf@gmail.com"))
