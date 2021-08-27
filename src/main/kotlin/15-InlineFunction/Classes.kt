@@ -3,7 +3,7 @@ package `15-InlineFunction`
 //1) Vamos começar modelando a classe Produto, o produto terá um
 //nome (String) e um preço (Double).
 
-class Produto(val nome: String, val preco: Double)
+data class Produto(val nome: String, val preco: Double)
 
 //2) Modele a classe CarrinhoDeCompras(), essa classe terá uma lista,
 //do tipo ArrayList<Produto> para itens do tipo Produto.

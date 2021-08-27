@@ -9,7 +9,7 @@ import java.util.*
 //receberá parametros e apenas fará a impressão do template abaixo:
 //##########DH SuperMarket##########
 
-val cabecalhoDoComprovante:() -> Unit = {
+val cabecalhoDoComprovante: () -> Unit = {
     println("##########DH SuperMarket##########")
 }
 
@@ -18,9 +18,9 @@ val cabecalhoDoComprovante:() -> Unit = {
 //retornará a data atual (String) formatada em dia/mes/ano, utilizando
 //a classe Calendar.
 
-val dataDaCompra:() -> Unit = {
+val dataDaCompra: () -> Unit = {
     var data = Calendar.getInstance()
-    println("Data: ${data.get(Calendar.DATE)}/${data.get(Calendar.MONTH)}/${data.get(Calendar.YEAR)}")
+    println("Data: ${data.get(Calendar.DATE)}/${data.get(Calendar.MONTH)+1}/${data.get(Calendar.YEAR)}")
 }
 
 //9) A terceira função que fechamentoDeConta() receberá, será a
@@ -29,9 +29,10 @@ val dataDaCompra:() -> Unit = {
 //cada item da lista, através do laço de repetição for.
 
 val imprimirListaDeCompra: (CarrinhoDeCompras) -> Unit = {
-    for(i in it.lista) {
+    for (i in it.lista) {
         println("${i.nome} R$${i.preco}")
     }
+    println("-------------------")
 }
 
 //10) E a quarta e última função será a função adicionaRodape(), que
@@ -41,6 +42,7 @@ val imprimirListaDeCompra: (CarrinhoDeCompras) -> Unit = {
 val adicionarRodape: (CarrinhoDeCompras) -> Unit = {
     var soma: Double = 0.00
     for (Produto in it.lista) {
-        soma += Produto.preco}
-    println("Total: R$$soma")
+        soma += Produto.preco
     }
+    println("Total: R$$soma")
+}

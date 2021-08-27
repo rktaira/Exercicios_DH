@@ -18,14 +18,15 @@ package `15-InlineFunction`
 //Total: R$ 00,00
 
 fun main() {
-    val arroz= Produto("Arroz 1kg", 5.99)
-    val feijao= Produto("Feijão 1kg", 8.49)
-    val leite= Produto("Leite 1l", 5.49)
-    val suco= Produto("Suco 1l", 4.99)
+    val arroz = Produto("Arroz 1kg", 5.99)
+    val feijao = Produto("Feijão 1kg", 8.49)
+    val leite = Produto("Leite 1l", 5.49)
+    val suco = Produto("Suco 1l", 4.99)
 
     val carrinho = CarrinhoDeCompras()
     carrinho.adicionar(arroz)
     carrinho.adicionar(arroz)
+    carrinho.adicionar(feijao)
     carrinho.adicionar(feijao)
     carrinho.adicionar(leite)
     carrinho.adicionar(suco)
