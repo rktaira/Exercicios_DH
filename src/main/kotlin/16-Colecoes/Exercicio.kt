@@ -16,7 +16,7 @@ Números da Loteria dos Sonhos:
 */
 
 fun main() {
-    val loteria = mapOf(0 to "Ovos", 1 to "Água", 2 to "Escopeta", 3 to "Cavalo", 4 to "Dentista", 5 to "Fogo")
+    val loteria = mapOf<Int, String>(0 to "Ovos", 1 to "Água", 2 to "Escopeta", 3 to "Cavalo", 4 to "Dentista", 5 to "Fogo")
     loteria.forEach {
         println("${it.key} -> ${it.value}")
     }
@@ -51,6 +51,14 @@ Collections - exercícios
     apelidos.forEach {
         println("${it.key} -> ${it.value}")
     }
+
+    for (amigo in apelidos){
+        println(amigo.key + amigo.value)
+        for (apelido in amigo.value) {
+            println(apelido)
+        }
+    }
+
 /*
 3. Definir e inicializar uma nova lista vazia. Adicionar os seguintes elementos à lista vazia:
 1,5,5,6,7,8,8,8. Imprimir o resultado na tela.
