@@ -50,6 +50,7 @@ class GuardaVolumes(val dicionario: MutableMap<Int, List<Peca>>, var contador: I
     }
 
 
+
     fun devolverPecas(numero: Int) {
         dicionario[numero] = listOf()
     }
